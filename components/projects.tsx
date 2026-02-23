@@ -30,7 +30,15 @@ const projects = [
     date: "Sept 2025 - Oct 2025",
     github: "https://github.com/mayankb72013/",
   },
-]
+  {
+    title: "SyncSketch",
+    description:
+      "A real-time collaborative drawing canvas with multi-user editing powered by WebSockets. Features shape manipulation, resizing, rotation, undo/redo event architecture, and server-synchronized canvas state for live collaboration across rooms.",
+    tech: ["React", "TypeScript", "Canvas API", "WebSockets", "Node.js"],
+    date: "Feb 2026 - Present",
+    github: "https://github.com/mayankb72013/",
+  },
+];
 
 export function Projects() {
   const { ref, isInView } = useInView()

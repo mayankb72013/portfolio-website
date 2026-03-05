@@ -31,12 +31,13 @@ const projects = [
     github: "https://github.com/mayankb72013/",
   },
   {
-    title: "SyncSketch",
+    title: "Canvix",
     description:
       "A real-time collaborative drawing canvas with multi-user editing powered by WebSockets. Features shape manipulation, resizing, rotation, undo/redo event architecture, and server-synchronized canvas state for live collaboration across rooms.",
     tech: ["React", "TypeScript", "Canvas API", "WebSockets", "Node.js"],
     date: "Feb 2026 - Present",
-    github: "https://github.com/mayankb72013/",
+    github: "https://github.com/mayankb72013/canvix",
+    liveLink: "https://canvix.random-idea.com/"
   },
 ];
 
@@ -77,7 +78,7 @@ export function Projects() {
                     </a>
                   )}
                   <a
-                    href={project.github}
+                    href={project.liveLink || project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground transition-colors hover:text-primary"

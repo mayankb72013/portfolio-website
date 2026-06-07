@@ -16,11 +16,16 @@ import {
   SiCss3,
   SiExpress,
   SiTurborepo,
+  SiSharp,
+  SiDotnet,
+  SiMysql,
 } from "react-icons/si"
 import { FaJava } from "react-icons/fa"
 import { TbBrandCpp, TbBrandSocketIo } from "react-icons/tb"
 import { VscCode } from "react-icons/vsc"
 import type { IconType } from "react-icons"
+import { TbApi } from "react-icons/tb"
+import { Bug } from "lucide-react"
 
 const iconMap: Record<string, { icon: IconType; color: string }> = {
   react: { icon: SiReact, color: "#61DAFB" },
@@ -54,8 +59,13 @@ const iconMap: Record<string, { icon: IconType; color: string }> = {
   "sql (postgresql)": { icon: SiPostgresql, color: "#4169E1" },
   recoil: { icon: SiReact, color: "#3578E5" },
   "rest apis": { icon: SiExpress, color: "#ffffff" },
+  "rest api": { icon: TbApi as IconType, color: "#00C2FF" },
   monorepos: { icon: SiTurborepo, color: "#EF4444" },
   intellij: { icon: FaJava, color: "#FE315D" },
+  "c#": { icon: SiSharp, color: "#239120" },
+  "asp.net": { icon: SiDotnet, color: "#512BD4" },
+  aspnet: { icon: SiDotnet, color: "#512BD4" },
+  debugging: { icon: Bug as IconType, color: "#EAB308" },
 }
 
 interface TechIconProps {

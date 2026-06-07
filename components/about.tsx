@@ -23,7 +23,7 @@ export function About() {
               {"I'm a Computer Science student at "}
               <span className="text-foreground font-medium">VIT, Vellore</span>
               {" with a current CGPA of "}
-              <span className="text-foreground font-medium">9.01 / 10</span>
+              <span className="text-foreground font-medium">8.97 / 10</span>
               {". I love working across the entire stack, from crafting polished user interfaces to designing robust backend systems."}
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">

@@ -31,17 +31,17 @@ export function Experience() {
                 </p>
               </div>
               <span className="whitespace-nowrap font-mono text-xs text-muted-foreground">
-                {"May 2026 - Present"}
+                {"May 2026 - July 2026"}
               </span>
             </div>
 
             <ul className="mt-5 flex flex-col gap-3">
               {[
-                "Contributing to enterprise healthcare technology systems supporting critical medical data exchange workflows and large-file processing pipelines.",
-                "Implementing resumable file-transfer capabilities with checkpoint-based recovery, enabling interrupted transfers to continue from the last committed segment instead of restarting from the beginning.",
-                "Developing checkpoint persistence mechanisms in C# and ASP.NET to preserve transfer state across process restarts and execution failures.",
-                "Tracing end-to-end request flows using debugging tools to understand controller, service, repository, and storage-layer interactions within a production codebase.",
-                "Collaborating directly with Principal Engineers and Senior Software Engineers during Agile sprint cycles to deliver production-ready features.",
+                "Contributed to enterprise healthcare technology systems supporting critical medical data exchange workflows and large-file processing pipelines.",
+                "Implemented resumable file-transfer capabilities with checkpoint-based recovery, enabling interrupted transfers to continue from the last committed segment instead of restarting from the beginning.",
+                "Developed checkpoint persistence mechanisms in C# and ASP.NET to preserve transfer state across process restarts and execution failures.",
+                "Traced end-to-end request flows using debugging tools to understand controller, service, repository, and storage-layer interactions within a production codebase.",
+                "Collaborated directly with Principal Engineers and Senior Software Engineers during Agile sprint cycles to deliver production-ready features.",
               ].map((item) => (
                 <li
                   key={item}
@@ -93,6 +93,8 @@ export function Experience() {
                 "Collaborated directly with the founder and a small team to drive product and tech decisions.",
                 "Developed and shipped end-to-end features across frontend and backend.",
                 "Built 70% of the Web2 platform within the first month, including key pages and core functionality.",
+                "Integrated OCR image recognition model into Node.js backend",
+                "Used multer for file storage and document verification operations",
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />

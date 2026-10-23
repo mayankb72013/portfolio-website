@@ -7,12 +7,20 @@ import { TechIconRow } from "./tech-icon"
 
 const projects = [
   {
-    title: "Bolt.new Clone",
+    title: "Postgres Job Queue",
     description:
-      "A Bolt.new clone that turns natural language prompts into full-stack web apps using Claude AI. Features in-browser code editing with real-time file generation and execution using WebContainers.",
+      "A durable background-job queue on PostgreSQL. Workers claim jobs atomically with FOR UPDATE SKIP LOCKED, so no two workers take the same job and none wait on each other. A heartbeat lease, fenced updates and a reaper recover jobs from crashed or stalled workers; failed jobs retry with exponential backoff and jitter and end in a dead state that can be requeued; idempotency keys stop duplicate submissions. Verified with 81 integration tests against a real database, including killed workers, a database outage and graceful shutdown.",
+    tech: ["Node.js", "TypeScript", "PostgreSQL", "Docker"],
+    date: "Oct 2026",
+    github: "https://github.com/mayankb72013/postgres-job-queue",
+  },
+  {
+    title: "QuickBolt",
+    description:
+      "An AI web-app builder (Bolt.new-style). An Express backend uses the Claude API to classify the project type and generate a full project from a prompt; the model's XML output is parsed into file and shell steps, shown in a Monaco file tree, and run in an in-browser WebContainer with live preview and no server-side execution.",
     tech: ["Claude AI", "React", "WebContainers", "Node.js"],
     date: "Aug 2025 - Present",
-    github: "https://github.com/mayankb72013/",
+    github: "https://github.com/mayankb72013/QuickBolt",
   },
   {
     title: "ChatApp",
@@ -25,15 +33,15 @@ const projects = [
   {
     title: "HD Wallet Web App",
     description:
-      "A multi-chain web wallet supporting both Ethereum and Solana accounts derived from a single BIP39 seed phrase. Implements HD wallet key derivation and mnemonic-based account generation.",
+      "A multi-chain wallet that derives Ethereum and Solana accounts from a single BIP39 mnemonic (PBKDF2 seed, BIP32 master key, BIP44 derivation paths) using Ethers.js and Solana Web3.js. Published a technical write-up of the derivation on Hashnode.",
     tech: ["Next.js", "TypeScript", "Ethers.js", "Solana.js", "BIP39"],
     date: "Sept 2025 - Oct 2025",
-    github: "https://github.com/mayankb72013/",
+    github: "https://github.com/mayankb72013/web-based-wallet",
   },
   {
     title: "Canvix",
     description:
-      "A real-time collaborative drawing canvas with multi-user editing powered by WebSockets. Features shape manipulation, resizing, rotation, undo/redo event architecture, and server-synchronized canvas state for live collaboration across rooms.",
+      "A real-time collaborative whiteboard with multi-user drawing, shape manipulation and room-based sync over WebSockets. A dual-canvas design (a preview layer for active drag, resize and rotate; a committed layer for finished shapes) avoids full-scene re-renders, and event-based undo/redo records shape operations instead of canvas snapshots to cut memory use. Turborepo monorepo with shared TypeScript packages; open-sourced.",
     tech: ["React", "TypeScript", "Canvas API", "WebSockets", "Node.js"],
     date: "Feb 2026 - Present",
     github: "https://github.com/mayankb72013/canvix",
@@ -112,4 +120,3 @@ export function Projects() {
     </section>
   )
 }
-

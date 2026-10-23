@@ -7,27 +7,43 @@ import { TechIcon } from "./tech-icon"
 const skillCategories = [
   {
     title: "Languages",
-    items: ["HTML", "CSS", "JavaScript", "TypeScript", "Java", "C", "C++", "SQL"],
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "Java", "C#", "C", "C++", "SQL", "T-SQL"],
   },
   {
     title: "Frameworks & Libraries",
-    items: ["React", "Next.js", "Recoil", "Tailwind CSS"],
+    items: ["React", "Next.js", "Node.js", "Express.js", "ASP.NET", ".NET", "Recoil", "Tailwind CSS"],
+  },
+  {
+    title: "AI & LLMs",
+    items: ["Claude API", "LLM Integration", "Prompt Engineering", "Structured Output Parsing"],
   },
   {
     title: "Databases",
-    items: ["PostgreSQL", "MongoDB"],
+    items: ["PostgreSQL", "SQL Server", "MongoDB"],
+  },
+  {
+    title: "APIs & Protocols",
+    items: ["REST APIs", "WebSockets", "OAuth"],
   },
   {
     title: "Dev & Build",
-    items: ["Monorepos", "Turborepo", "Docker", "WebSockets", "REST APIs"],
+    items: ["Monorepos", "Turborepo", "Docker"],
   },
   {
     title: "Tools & Cloud",
-    items: ["Git", "AWS Cloud", "VS Code", "IntelliJ"],
+    items: ["Git", "GitHub", "AWS Cloud", "VS Code", "IntelliJ"],
   },
   {
     title: "Computer Science",
-    items: ["Data Structures", "Algorithms"],
+    items: [
+      "Data Structures",
+      "Algorithms",
+      "OOP",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks",
+      "System Design",
+    ],
   },
 ]
 

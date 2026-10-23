@@ -37,11 +37,11 @@ export function Experience() {
 
             <ul className="mt-5 flex flex-col gap-3">
               {[
-                "Contributed to enterprise healthcare technology systems supporting critical medical data exchange workflows and large-file processing pipelines.",
-                "Implemented resumable file-transfer capabilities with checkpoint-based recovery, enabling interrupted transfers to continue from the last committed segment instead of restarting from the beginning.",
-                "Developed checkpoint persistence mechanisms in C# and ASP.NET to preserve transfer state across process restarts and execution failures.",
-                "Traced end-to-end request flows using debugging tools to understand controller, service, repository, and storage-layer interactions within a production codebase.",
-                "Collaborated directly with Principal Engineers and Senior Software Engineers during Agile sprint cycles to deliver production-ready features.",
+                "Redesigned file transfer in the Data Exchange Platform (DXP), a healthcare secure-transfer app, with chunk-based streaming at constant memory, removing a ~2 GB ceiling that blocked 50 GB+ production transfers.",
+                "Implemented resumable FTPS/SFTP transfers with checkpoint recovery (REST offsets, since FTPS streams are not seekable) and atomic .tmp staging with rename, so interrupted jobs resume from the last committed chunk and never leave partial files.",
+                "Developed checkpoint persistence in C# and ASP.NET to preserve transfer state across process restarts and execution failures.",
+                "Built a T-SQL cron engine (5 stored procedures, 3 scalar functions) with L/W/# syntax and per-job error isolation that scans 2,500+ scheduled jobs against a deployment window in seconds; shipped to production in one week and adopted as the standard pre-release job-impact tool.",
+                "Added a per-connection SFTP host-key enforcement toggle so server migrations no longer block jobs; wrote design documents as ADRs and shipped through Agile sprints with full code reviews.",
               ].map((item) => (
                 <li
                   key={item}
@@ -89,12 +89,10 @@ export function Experience() {
 
             <ul className="mt-5 flex flex-col gap-3">
               {[
-                "Developed a REST API using ExpressJS and MongoDB to store data.",
-                "Collaborated directly with the founder and a small team to drive product and tech decisions.",
-                "Developed and shipped end-to-end features across frontend and backend.",
-                "Built 70% of the Web2 platform within the first month, including key pages and core functionality.",
-                "Integrated OCR image recognition model into Node.js backend",
-                "Used multer for file storage and document verification operations",
+                "Architected and delivered 70% of the Web2 platform in the first month: a React frontend and a Node.js/Express backend on MongoDB, with 15+ REST APIs and MongoDB schemas.",
+                "Built a blockchain-based traceability flow with a document verification system, using Merkle tree hashing for instant verification of agreements.",
+                "Integrated an OCR model into the Node.js backend for image verification, working directly with the founder and a small team.",
+                "Used multer for file storage and document verification operations.",
               ].map((item) => (
                 <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
@@ -112,4 +110,3 @@ export function Experience() {
     </section>
   )
 }
-

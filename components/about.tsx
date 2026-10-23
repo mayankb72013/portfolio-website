@@ -19,24 +19,34 @@ export function About() {
         <div className="mt-8 grid gap-8 md:grid-cols-3">
           <div className="md:col-span-2">
             <p className="leading-relaxed text-muted-foreground">
-              {"I'm a Computer Science student at "}
+              {"I'm a final-year Computer Science student at "}
               <span className="text-foreground font-medium">VIT, Vellore</span>
-              {" with a current CGPA of "}
+              {" (graduating 2027) with a CGPA of "}
               <span className="text-foreground font-medium">8.97 / 10</span>
-              {". I love working across the entire stack, from crafting polished user interfaces to designing robust backend systems."}
-            </p>
-            <p className="mt-4 leading-relaxed text-muted-foreground">
-              {"Currently, I'm working as a "}
-              <span className="font-medium text-foreground">Software Engineer Intern at Providence India</span>
-              {", where I'm contributing to enterprise healthcare technology systems, implementing resilient file-transfer workflows, and learning how large-scale production systems are designed and maintained."}
+              {". I like working across the whole stack, from polished user interfaces to robust backend systems."}
             </p>
 
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              {"Previously, I worked as a "}
-              <span className="font-medium text-foreground">Full Stack Intern at OriginHash</span>
-              {", where I built and shipped end-to-end features across the frontend and backend, helping develop a significant portion of the company's Web2 platform. "}
+              {"Right now I'm doing "}
+              <span className="font-medium text-foreground">independent research under Dr. Nivitha K</span>
+              {" (B.Tech Project-I), working on a journal manuscript about scheduling jobs on cloud GPU clusters, deciding which GPU should run each incoming job while balancing energy use against deadline risk."}
             </p>
-            <p className="mt-4 leading-relaxed text-muted-foreground">{"I'm particularly interested in backend engineering, developer tools, cloud infrastructure, distributed systems, and building products that solve real-world problems."}</p>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              {"This summer I was a "}
+              <span className="font-medium text-foreground">Software Engineer Intern at Providence India</span>
+              {", working on a healthcare secure file-transfer platform. I redesigned transfers to stream in chunks at constant memory, made FTPS/SFTP transfers resumable from checkpoints, and built a T-SQL cron engine that the team adopted as its pre-release job-impact tool."}
+            </p>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              {"Before that, as a "}
+              <span className="font-medium text-foreground">Full Stack Intern at OriginHash (T-Hub)</span>
+              {", I built much of the company's Web2 platform: a React frontend and a Node.js/Express backend on MongoDB with 15+ REST APIs."}
+            </p>
+
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              {"I'm most interested in backend engineering, distributed systems and reliable background processing, developer tools, and cloud infrastructure. I was also a finalist at the Caterpillar Hackathon 2026, one of fewer than 110 final-round teams."}
+            </p>
           </div>
 
           <div className="flex flex-col gap-4">
